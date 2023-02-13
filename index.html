@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 이서윤체 폰트 적용을 위한 코드 */
+      @font-face {
+        font-family: "LeeSeoyun";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      /* body태그 자체에 css 요소 부여 */
+body {
+	font-family: "LeeSeoyun";
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	background-image: url("./background.jpg");
+}
+
+.container {
+    width: 390px;
+    background-color: #ff9d72;
+    height: 100%;
+}
+
+.photos {
+    margin-top: 30px;
+}
+
+.photo-frame{
+    background-color: aliceblue;
+    margin: 15px 20px;
+    height: 200px;
+
+    background-size: cover;
+    position: relative;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.f-date{
+    color :white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.f-title{
+    color :white;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+#image1{
+    background-image: url(./베키1.jpg);
+}
+#image2{
+    background-image: url(./베키2.jpg);
+}
+#image3{
+    background-image: url(./베키3.jpg);
+}
+#image4{
+    background-image: url(./베키4.jpg);
+}
+
+.photo_description{
+    color:blueviolet;
+    background-color:black;
+
+    width: fit-content;
+    padding: 0 20px;
+    margin-bottom: 10px;
+
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+
+    transform: translate(-50%);
+    left: 50%;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="photos">
+            <div id="image1" class="photo-frame">
+                <span id="desc1" class="photo_description">
+             베키사랑스러워
+                </span>
+            </div>
+            <div id="image2" class="photo-frame">
+                <span id="desc1" class="photo_description">
+                 베키귀여워
+                </span>
+            </div>
+            <div id="image3" class="photo-frame">
+                <span id="desc1" class="photo_description">
+                    베키짱이야
+                </span>
+            </div>
+            <div id="image4" class="photo-frame">
+                <span id="desc1" class="photo_description">
+                    프린베키사귐
+                </span>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="f-title">freenbeaky</p>
+            <p class="f-date">2023.02.13</p>
+        </div>
+    </div>
+</body>
+</html>
